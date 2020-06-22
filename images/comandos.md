@@ -35,3 +35,8 @@ docker image ls --filter=reference="*:latest"
 ```
 docker image ls --format "{{.Size}}"
 ```
+
+## Buscando Docker Hub
+```
+docker search <repository>
+```
