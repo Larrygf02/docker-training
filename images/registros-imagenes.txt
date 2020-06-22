@@ -1,0 +1,13 @@
+IMAGENES
+========
+
+*Las imagenes de docker se almacenan en un registro de imagenes
+* El mas comun es DockerHub
+* Los registros de imagenes contienen multiples repositorios de
+imagenes. A su vez los repositorios de imagenes, contienen
+multiples imagenes.
+
+DockerHub
+=========
+
+* Dos tipos: repositorios Oficiales y no oficiales
