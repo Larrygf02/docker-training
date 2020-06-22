@@ -1,0 +1,9 @@
+IMAGENES
+========
+
+* Las imagenes en docker son como clases (si eres desarrollador)
+o como contenedores detenidos.
+* Se consideran construcciones en tiempo de construcción
+* Puedes crear muchas contenedores apartir de una imagen.
+* No puedes eliminar una imagen si esta en ejecucion un contenedor
+* Las imagenes de Windows pesan mas que las imagenes de linux
