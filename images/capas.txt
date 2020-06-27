@@ -1,0 +1,18 @@
+Imagenes y capas
+==============
+
+* Una imagen de docker es solo un monton de capas de solo
+lectura.
+* Docker se encarga de apilar estas capas y representarlas
+como una unidad
+* El termino "Pull Complete" representa una capa
+* Para ver las capas de una imagen => docker image inspect ubuntu
+Buscar donde dice layers
+
+* Todas las imagenes comienzan con una capa base
+* Varias imagenes comparten capas
+
+* Docker 1.10 introdujo un nuevo modelo de almacenamiento
+de contenido direccionable. Todas las imagenes ahora
+obtienen un hash de contenido criptográfico. Esto significa
+que son inmutables.

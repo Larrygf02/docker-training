@@ -39,4 +39,5 @@ docker image ls --format "{{.Size}}"
 ## Buscando Docker Hub
 ```
 docker search <repository>
+docker search <repository> --filter "is-official=true"
 ```
