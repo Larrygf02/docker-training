@@ -16,3 +16,15 @@ Buscar donde dice layers
 de contenido direccionable. Todas las imagenes ahora
 obtienen un hash de contenido criptográfico. Esto significa
 que son inmutables.
+
+* Hash de distribucion, es una version comprimida de la capa
+
+* Las imagenes tienen una lista de manifestos 
+que corresponden a las distintas plataformas, cuando se tira 
+la imagen. Docker se encarga de tirar la imagen respectiva
+correspondiente a tu SO.
+
+Eliminar las imagenes
+================
+
+Al eliminar las imagenes
