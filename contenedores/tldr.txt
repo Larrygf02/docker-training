@@ -1,0 +1,28 @@
+Contendedor
+===========
+
+* El contenedor es la instancia de tiempo de ejecucion de una imagen. 
+* A diferencia de una maquina virtual, los contenedores son mucho mas 
+livianos y rápidos.
+
+docker container run -it ubuntu /bin/bash
+
+-it : Conectar su ventana de terminal actual al shell del contenedor
+
+Contenedor vs VM
+================
+
+* Los contenedores y las maquinas virtuales necesitan un host para ejecutarse.
+* A un alto nivel podemos decir que los hipervisores realizan la "virtualizacion
+de hardware", dividen los recursos de hardware físico en versiones virtuales.
+Por otro lado los contenedores realizan la "virtualizacion del sistema operativo"
+
+El impuesto de VM
+=================
+* Cada VM es una construcción de software que contiene CPU virtual, RAM y disco.
+
+El modelo de contenedor tiene un solo nucleo que se ejecuta en el sistema operativo
+host. Es posible correr decenas o ciertos de contenedores en un solo host con 
+cada contenedor.
+
+* El inicio de un contenedor es mucho mas rápido que el de un VM

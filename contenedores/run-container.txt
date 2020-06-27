@@ -1,0 +1,23 @@
+docker container run -it ubuntu:latest bash
+
+it: Crea una ventana interactiva del shell contenedor 
+a tu terminal actual.
+
+docker client: Extra la imagen sino se encuentra en cache
+docker server: Crea el contenedor y ejecuta la aplicación.
+
+## Cuando se ejecuta retornara algo parecido a
+
+root@1ef65dcc5c35:/# 
+donde "1ef65dcc5c35": Son las primeros 12 caracteres del 
+id del contenedor.
+
+Otro punto importante es que el contenedor ejecuta un solo
+proceso, para comprobar esto podemos escribir el siguiente 
+comando. 
+"ps -elf"
+Al menos en sistemas unix :v, en windows varia un poco
+
+Notas: 
+Matar el proceso principal de un contenedor 
+tambien matará al contenedor.

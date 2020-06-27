@@ -27,4 +27,4 @@ correspondiente a tu SO.
 Eliminar las imagenes
 ================
 
-Al eliminar las imagenes
+Al eliminar las imagenes se eliminan las capas de esa imagen
