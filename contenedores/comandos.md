@@ -19,3 +19,9 @@ docker container ls
 ```
 docker container ls -a
 ```
+
+### Eliminar contenedor
+```
+docker container stop <name>
+docker container rm <name>
+```

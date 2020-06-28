@@ -1,0 +1,22 @@
+Ciclo de vida del contenedor
+===========================
+
+docker container run --name percy -it ubuntu:latest bash
+
+Puede detener, iniciar, pausar y reiniciar un contenedor
+tantas veces como quieras. Y todo sucederá muy rapido
+
+Eliminar contenedor
+===================
+
+ES recomendable, primero parar el contenedor y luego eliminarlo
+
+Cuando se ejecuta "docker container rm <name> -f", el contenedor
+sera asesinado sin previo aviso
+
+Cuando se ejecuta "docker container stop <name>", se envia una señal
+al proceso PID 1 dentro del contenedor. Esto le da la oportunidad al
+proceso limpiar las cosas y con gracia se cerró. Sino sale recibirá
+un SIGKILL.
+
+docker container rm <name> -f => va directo al SIGKILL
