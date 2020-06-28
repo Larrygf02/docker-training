@@ -25,3 +25,13 @@ docker container ls -a
 docker container stop <name>
 docker container rm <name>
 ```
+
+### Reiniciar contenedor con politicas de reinicio
+```
+docker container run --name neversaydie -it --restart always alpine sh
+```
+
+### Crea un nuevo proceso dentro del contenedor
+```
+docker container exec <name-contenedor>
+```

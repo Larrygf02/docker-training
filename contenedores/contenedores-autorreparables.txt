@@ -1,0 +1,13 @@
+Los contenedores tienen politicas de autorecuperarse
+* always
+* unless-stopped
+* on-failed
+
+
+docker container run -d --name webserver -p 80:8080 \
+nigelpoulton/pluralsight-docker-ci
+
+bandera "-d" => Inicia un contenedor en segundo plano, 
+no lo conecta a su terminal
+
+-p 80:8080 => Mapeamos el puerto ad
