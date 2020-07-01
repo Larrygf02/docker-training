@@ -1,0 +1,30 @@
+# Test web-app to use with Pluralsight courses and Docker Deep Dive book
+# Linux x64
+FROM alpine
+
+LABEL maintainer="nigelpoulton@hotmail.com"
+
+# Install Node and NPM
+RUN apk add --update nodejs nodejs-npm
+
+# Copy app to /src
+COPY . /src
+
+WORKDIR /src
+
+# Install dependencies
+RUN  npm install
+
+EXPOSE 8080
+
+ENTRYPOINT ["node", "./app.js"]
+
+## *La linea de comentarios comienzan con el caracter #
+## *Todas las lineas sin comentarias son intrucciones
+## *Los nombres de las instrucciones no distinguen entre
+## mayusculas y minusculas, pero es una buena practica 
+## ponerlo en mayuscula para una mayor legibilidad
+## *Algunas instrucciones crean capas y otras simplemente
+## agregan metadatos
+## FROM RUN COPY => crean capas
+## EXPOSE WORKDIR ENV ENTRYPOINT => agregan metadatos

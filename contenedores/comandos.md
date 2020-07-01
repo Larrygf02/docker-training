@@ -35,3 +35,9 @@ docker container run --name neversaydie -it --restart always alpine sh
 ```
 docker container exec <name-contenedor>
 ```
+
+### Para ver las instrucciones que se usaron para construir
+### la imagen
+```
+docker image history <image>
+```
