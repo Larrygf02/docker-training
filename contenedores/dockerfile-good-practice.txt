@@ -1,0 +1,8 @@
+* Se considera buena practica incluir varios comando como 
+parte de una instruccion RUM 
+* Patron de construccion "Dockerfile"
+https://blog.alexellis.io/mutli-stage-docker-builds/#:~:text=A%20workaround%20which%20is%20informally,tooling%20in%20the%20first%20image.&text=Derive%20from%20a%20Golang%20base,build)
+
+* Multi stage Dockerfile
+Un archivo dockerfile con multiples FROM
+* Aprovechar cache de compilación
