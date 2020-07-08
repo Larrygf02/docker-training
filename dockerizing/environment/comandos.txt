@@ -1,0 +1,2 @@
+export today=monday
+docker run -e "color=blue" -e today --rm alpine env
