@@ -1,2 +1,7 @@
 export today=monday
 docker run -e "color=blue" -e today --rm alpine env
+
+
+## Atach
+docker run --name test -d -it debian
+docker attach test
