@@ -1,0 +1,12 @@
+* Compose antes era Fig
+* Compose usa archivos YAML
+* Compose se base en 4 componentes
+a) Version
+b) Servicios
+c) Redes
+d) Volumenes
+
+a) Version: Obligatoria
+b) Servicios: Compose despliega cada uno de los servicio como 
+un propio contenedor
+c) Redes: Por defecto crea una red
